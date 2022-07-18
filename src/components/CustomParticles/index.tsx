@@ -1,24 +1,12 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { Container, Engine, MoveDirection, OutMode } from "tsparticles-engine";
+import { Engine } from "tsparticles-engine";
 
 const CustomParticles = () => {
-  const particlesInit = async (main: Engine) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(main);
-  };
-
-  const particlesLoaded = async (container?: Container) => {
-    console.log(container);
-  };
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
+      init={async (main: Engine) => await loadFull(main)}
       options={{
         fullScreen: {
           enable: true,
@@ -28,6 +16,9 @@ const CustomParticles = () => {
           color: {
             value: "#000000",
           },
+        },
+        style: {
+          height: "100vh",
         },
         particles: {
           move: {
