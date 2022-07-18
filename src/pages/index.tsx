@@ -9,8 +9,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zhuoling Zhou</title>
+        <title>Zhuoling Zhou | Software Engineer</title>
         <meta name="description" content="Zhou's personal website." />
+        <meta property="og:image" content="https://zzhou.dev/pikasparkle.gif" />
+        <meta property="og:image:type" content="image/gif" />
       </Head>
       <AnimatedFavicon />
       <Navbar />
