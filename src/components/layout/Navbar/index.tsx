@@ -4,7 +4,7 @@ import MenuIcon from "../../icons/MenuIcon";
 const Navbar = () => {
   const navRef = useRef<HTMLUListElement>(null);
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-gray-900/50 p-6 fixed t-0 w-full">
+    <nav className="flex items-center justify-between flex-wrap bg-black/50 p-6 fixed t-0 w-full">
       <h1 className="text-white mr-6 text-2xl cursor-default md:ml-2">
         {"<Zhou />"}
       </h1>
