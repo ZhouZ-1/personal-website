@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { trpc } from "../utils/trpc";
+import Footer from "../components/layout/Footer";
+import Navbar from "../components/layout/Navbar";
+import AnimatedFavicon from "../components/icons/AnimatedFavicon";
 
 const Home: NextPage = () => {
   const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
@@ -10,14 +13,15 @@ const Home: NextPage = () => {
       <Head>
         <title>Zhuoling Zhou</title>
         <meta name="description" content="Zhou's personal website." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* Center text */}
-      <div className="w-screen min-h-screen flex flex-col justify-center items-center p-4 overflow-y-scroll">
-        <div className="text-[3rem] lg:text-[4rem] md:text-[4rem] font-extrabold text-gray-800">
+      <AnimatedFavicon />
+      <Navbar />
+      <div className="min-h-screen flex flex-col justify-center items-center bg-black">
+        <div className="text-5xl md:text-7xl font-extrabold text-white">
           Hello world 👋
         </div>
       </div>
+      <Footer />
     </>
   );
 };
