@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { Engine } from "tsparticles-engine";
 
-const CustomParticles = () => {
+const Stars = () => {
   return (
     <Particles
       id="tsparticles"
@@ -14,6 +14,7 @@ const CustomParticles = () => {
         },
         style: {
           height: "100vh",
+          position: "absolute",
         },
         particles: {
           move: {
@@ -43,4 +44,4 @@ const CustomParticles = () => {
   );
 };
 
-export default CustomParticles;
+export default Stars;

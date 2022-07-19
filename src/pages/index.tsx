@@ -2,8 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
-import AnimatedFavicon from "../components/icons/AnimatedFavicon";
-import CustomParticles from "../components/CustomParticles";
+import Landing from "../components/content/Landing";
 
 const Home: NextPage = () => {
   return (
@@ -11,18 +10,29 @@ const Home: NextPage = () => {
       <Head>
         <title>Zhuoling Zhou | Software Engineer</title>
         <meta name="description" content="Zhou's personal website." />
-        <meta property="og:image" content="https://zzhou.dev/pikasparkle.gif" />
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <AnimatedFavicon />
       <Navbar />
-      <div className="h-screen flex flex-col justify-center items-center">
-        <div className="text-5xl md:text-7xl font-extrabold text-white">
-          Hello world 👋
-        </div>
-      </div>
+      <Landing />
       <Footer />
-      <CustomParticles />
     </>
   );
 };
