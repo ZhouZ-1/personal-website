@@ -1,42 +1,65 @@
-import { useRef } from "react";
+import { useState } from "react";
 import MenuIcon from "../../icons/MenuIcon";
+import { Transition } from "@headlessui/react";
 
 const Navbar = () => {
-  const navRef = useRef<HTMLUListElement>(null);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-black/50 p-6 fixed t-0 w-full">
+    <nav className="flex items-center justify-between flex-wrap p-6 fixed t-0 w-full z-10">
       <h1 className="text-white mr-6 text-2xl cursor-default md:ml-2">
         {"<Zhou />"}
       </h1>
       <MenuIcon
         onClick={() => {
-          navRef.current?.classList.toggle("max-h-0");
-          navRef.current?.classList.toggle("max-h-[25vh]");
+          setIsOpen((isOpen) => !isOpen);
         }}
       />
-      <ul
-        className="w-full flex-grow md:flex md:w-auto justify-end block transition-all ease-linear duration-300 overflow-hidden py-1 max-h-0 md:max-h-fit text-white text-lg"
-        ref={navRef}
+      {/* Mobile menu */}
+      <Transition
+        as="ul"
+        show={isOpen}
+        enter="transition ease-out duration-100"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-75"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+        className=" md:hidden w-full text-white text-lg"
       >
-        <li className="block mt-4 md:inline-block md:mt-0 mr-4  hover:text-gray-200 text-right">
+        <li className="mt-4 mr-4 hover:text-gray-200 text-right relative">
           <a href="#home" className="cursor-pointer px-1">
             Home
           </a>
         </li>
-        <li className="block mt-4 md:inline-block md:mt-0 mr-4 hover:text-gray-200 text-right">
+        <li className="mt-4 mr-4 hover:text-gray-200 text-right">
           <a href="#about" className="cursor-pointer px-1">
             About
           </a>
         </li>
-        <li className="block mt-4 md:inline-block md:mt-0 mr-4 hover:text-gray-200 text-right">
+        <li className="mt-4 mr-4 hover:text-gray-200 text-right">
           <a href="#projects" className="cursor-pointer px-1">
             Projects
           </a>
         </li>
-        <li className="block mt-4 md:inline-block md:mt-0 mr-4 hover:text-gray-200 text-right">
+        <li className="mt-4 mr-4 hover:text-gray-200 text-right">
           <a href="#contact" className="cursor-pointer px-1">
             Contact
           </a>
+        </li>
+      </Transition>
+      <ul className="flex-grow md:flex w-auto justify-end text-white text-lg hidden">
+        <li className="cursor-pointer hover:text-gray-200 mr-4">
+          <a href="#home">Home</a>
+        </li>
+        <li className="cursor-pointer hover:text-gray-200 mr-4">
+          <a href="#about">About</a>
+        </li>
+        <li className="cursor-pointer hover:text-gray-200 mr-4">
+          <a href="#projects">Projects</a>
+        </li>
+        <li className="cursor-pointer hover:text-gray-200 mr-4">
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>

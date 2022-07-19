@@ -10,12 +10,7 @@ const CustomParticles = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: -1,
-        },
-        background: {
-          color: {
-            value: "#000000",
-          },
+          zIndex: 1,
         },
         style: {
           height: "100vh",
