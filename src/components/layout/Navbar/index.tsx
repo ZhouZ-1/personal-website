@@ -1,12 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuIcon from "../../icons/MenuIcon";
 import { Transition } from "@headlessui/react";
 
-const Navbar = () => {
+interface Props {
+  refs: React.RefObject<HTMLDivElement>[];
+}
+
+const Navbar = ({ refs }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    refs.forEach((ref) => {
+      console.log(ref.current?.offsetHeight);
+    });
+  }, [refs]);
+
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 fixed t-0 w-full z-10">
+    <nav className="flex items-center justify-between flex-wrap p-6 fixed t-0 w-full z-10 bg-black font-semibold">
       <h1 className="text-white mr-6 text-2xl cursor-default md:ml-2">
         {"<Zhou />"}
       </h1>
@@ -28,22 +38,38 @@ const Navbar = () => {
         className=" md:hidden w-full text-white text-lg"
       >
         <li className="mt-4 mr-4 hover:text-gray-200 text-right relative">
-          <a href="#home" className="cursor-pointer px-1">
+          <a
+            href="#home"
+            className="cursor-pointer px-1"
+            onClick={() => setIsOpen(false)}
+          >
             Home
           </a>
         </li>
         <li className="mt-4 mr-4 hover:text-gray-200 text-right">
-          <a href="#about" className="cursor-pointer px-1">
+          <a
+            href="#about"
+            className="cursor-pointer px-1"
+            onClick={() => setIsOpen(false)}
+          >
             About
           </a>
         </li>
         <li className="mt-4 mr-4 hover:text-gray-200 text-right">
-          <a href="#projects" className="cursor-pointer px-1">
+          <a
+            href="#projects"
+            className="cursor-pointer px-1"
+            onClick={() => setIsOpen(false)}
+          >
             Projects
           </a>
         </li>
         <li className="mt-4 mr-4 hover:text-gray-200 text-right">
-          <a href="#contact" className="cursor-pointer px-1">
+          <a
+            href="#contact"
+            className="cursor-pointer px-1"
+            onClick={() => setIsOpen(false)}
+          >
             Contact
           </a>
         </li>

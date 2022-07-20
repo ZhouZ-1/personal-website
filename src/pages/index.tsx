@@ -3,8 +3,17 @@ import Head from "next/head";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import Landing from "../components/content/Landing";
+import About from "../components/content/About";
+import Projects from "../components/content/Projects";
+import Contact from "../components/content/Contact";
+import { useRef } from "react";
 
 const Home: NextPage = () => {
+  const landingRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <>
       <Head>
@@ -30,8 +39,11 @@ const Home: NextPage = () => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Navbar />
-      <Landing />
+      <Navbar refs={[landingRef, aboutRef, projectsRef, contactRef]} />
+      <Landing ref={landingRef} />
+      <About ref={aboutRef} />
+      <Projects ref={projectsRef} />
+      <Contact ref={contactRef} />
       <Footer />
     </>
   );
