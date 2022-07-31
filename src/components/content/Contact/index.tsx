@@ -1,6 +1,6 @@
 import { ForwardedRef, forwardRef } from "react";
 
-const Contact = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
+const Contact = ({}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <section
       className="h-screen flex bg-sky-900 text-white scroll-mt-20"
@@ -12,6 +12,6 @@ const Contact = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
       </div>
     </section>
   );
-});
+};
 
-export default Contact;
+export default forwardRef(Contact);

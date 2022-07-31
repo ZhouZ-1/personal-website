@@ -1,6 +1,6 @@
 import { ForwardedRef, forwardRef } from "react";
 
-const About = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
+const About = ({}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <section
       className="h-screen flex bg-gray-900 text-white scroll-mt-20"
@@ -12,5 +12,6 @@ const About = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
       </div>
     </section>
   );
-});
-export default About;
+};
+
+export default forwardRef(About);

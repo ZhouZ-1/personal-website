@@ -1,7 +1,7 @@
 import { ForwardedRef, forwardRef } from "react";
 import Stars from "./Stars";
 
-const Landing = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
+const Landing = ({}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <main
       className="h-screen flex flex-col justify-center items-center"
@@ -14,6 +14,6 @@ const Landing = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
       </h2>
     </main>
   );
-});
+};
 
-export default Landing;
+export default forwardRef(Landing);
