@@ -12,28 +12,28 @@ const Socials = () => {
         href="https://github.com/ZhouZ-1"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={GitHub} />
+        <Image src={GitHub} alt="GitHub icon" />
         <span>GitHub</span>
       </a>
       <a
         href="https://www.linkedin.com/in/zhouz1/"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={LinkedIn} />
+        <Image src={LinkedIn} alt="LinkedIn icon" />
         <span>LinkedIn</span>
       </a>
       <a
         href="https://zzhou.dev/resume_public.pdf"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={ResumeIcon} />
+        <Image src={ResumeIcon} alt="Resume icon" />
         <span>Resume</span>
       </a>
       <a
         href="mailto:hello@zzhou.dev"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={Email} />
+        <Image src={Email} alt="Email icon" />
         <span>Email</span>
       </a>
     </section>

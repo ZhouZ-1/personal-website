@@ -10,11 +10,11 @@ const About = ({}, ref: ForwardedRef<HTMLDivElement>) => {
       <div className="container p-8 mx-auto">
         <h2 className="text-6xl font-bold">About</h2>
         <p className="text-white text-2xl md:text-3xl">
-          I'm a full-stack developer with a passion for building beautiful
+          I&apos;m a full-stack developer with a passion for building beautiful
           applications.
         </p>
         <p className="text-white text-2xl md:text-3xl">
-          I'm a self-taught developer with a passion for learning new
+          I&apos;m a self-taught developer with a passion for learning new
           technologies.
         </p>
       </div>

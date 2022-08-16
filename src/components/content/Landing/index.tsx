@@ -21,7 +21,12 @@ const Landing = ({}, ref: ForwardedRef<HTMLDivElement>) => {
       </p>
       <Socials />
       <a href="#about" className="absolute bottom-10 animate-bounce">
-        <Image src={ArrowDownIcon} width={24} height={24} />
+        <Image
+          src={ArrowDownIcon}
+          width={24}
+          height={24}
+          alt="arrow down icon"
+        />
       </a>
     </main>
   );
