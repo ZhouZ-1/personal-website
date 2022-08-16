@@ -16,7 +16,7 @@ const Landing = ({}, ref: ForwardedRef<HTMLDivElement>) => {
       <h2 className="text-5xl md:text-7xl bold ">
         Zhuoling <span className="font-bold">Zhou</span>
       </h2>
-      <p className="text-white text-lg md:text-xl mt-2">
+      <p className="text-white text-md md:text-xl mt-2">
         Penultimate student @ UNSW | Software Engineer
       </p>
       <Socials />

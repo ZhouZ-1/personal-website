@@ -7,7 +7,7 @@ import Email from "../svgs/email.svg";
 
 const Socials = () => {
   return (
-    <section className="text-white flex text-xl mt-3 space-x-5">
+    <section className="text-white flex md:text-xl mt-3 space-x-5">
       <a
         href="https://github.com/ZhouZ-1"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
