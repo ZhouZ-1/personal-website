@@ -1,3 +1,5 @@
+// TODO: Move from babel to swc after figuring out how to use svgs as inline
+// components without having to use babel.
 {
   "presets": ["next/babel"],
   "plugins": ["inline-react-svg"]
