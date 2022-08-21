@@ -34,7 +34,7 @@ const Socials = () => {
         <MailIcon
           className="flex-shrink-0 h-6 w-6 text-white"
           aria-hidden="true"
-        />{" "}
+        />
         <span>Email</span>
       </a>
     </section>

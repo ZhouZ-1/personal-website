@@ -44,10 +44,10 @@ const Contact = ({}, ref: ForwardedRef<HTMLDivElement>) => {
                 Get in touch
               </h2>
               <p className="mt-3 text-lg leading-6 text-gray-500">
-                I'm always open to new opportunities. Want to have a quick chat
-                or grab a coffee? Feel free to connect with me on LinkedIn, send
-                me an email or contact me via the form. I'll get back to you as
-                soon as possible.
+                I&apos;m always open to new opportunities. Want to have a quick
+                chat or grab a coffee? Feel free to connect with me on LinkedIn,
+                send me an email or contact me via the form. I&apos;ll get back
+                to you as soon as possible.
               </p>
               <dl className="mt-8 text-base text-gray-500">
                 <div className="mt-3">
