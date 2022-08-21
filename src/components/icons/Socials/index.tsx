@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 import GitHub from "../svgs/github.svg";
 import LinkedIn from "../svgs/linkedin.svg";
 import ResumeIcon from "../svgs/resume.svg";
-import Email from "../svgs/email.svg";
+import { MailIcon } from "@heroicons/react/outline";
 
 const Socials = () => {
   return (
@@ -12,28 +10,31 @@ const Socials = () => {
         href="https://github.com/ZhouZ-1"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={GitHub} alt="GitHub icon" />
+        <GitHub />
         <span>GitHub</span>
       </a>
       <a
         href="https://www.linkedin.com/in/zhouz1/"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={LinkedIn} alt="LinkedIn icon" />
+        <LinkedIn />
         <span>LinkedIn</span>
       </a>
       <a
         href="https://zzhou.dev/resume_public.pdf"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={ResumeIcon} alt="Resume icon" />
+        <ResumeIcon />
         <span>Resume</span>
       </a>
       <a
         href="mailto:hello@zzhou.dev"
         className="hover:scale-110 transition-all ease-out flex justify-center items-center space-x-1"
       >
-        <Image src={Email} alt="Email icon" />
+        <MailIcon
+          className="flex-shrink-0 h-6 w-6 text-white"
+          aria-hidden="true"
+        />{" "}
         <span>Email</span>
       </a>
     </section>

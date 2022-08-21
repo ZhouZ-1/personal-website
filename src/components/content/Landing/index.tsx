@@ -1,7 +1,6 @@
 import { ForwardedRef, forwardRef } from "react";
 import Socials from "../../icons/Socials";
 import Stars from "./Stars";
-import Image from "next/image";
 
 import ArrowDownIcon from "../../icons/svgs/arrow-down-icon.svg";
 
@@ -21,12 +20,7 @@ const Landing = ({}, ref: ForwardedRef<HTMLDivElement>) => {
       </p>
       <Socials />
       <a href="#about" className="absolute bottom-10 animate-bounce">
-        <Image
-          src={ArrowDownIcon}
-          width={24}
-          height={24}
-          alt="arrow down icon"
-        />
+        <ArrowDownIcon width={24} height={24} />
       </a>
     </main>
   );
