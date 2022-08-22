@@ -12,17 +12,18 @@ const About = ({}, ref: ForwardedRef<HTMLDivElement>) => {
           &lt;About /&gt;
         </h2>
         <p className="mt-3 text-lg leading-6 text-slate-100 font-light">
-          Hi, I&apos;m Zhou. I'm a software engineer with a passion for learning
-          new technologies. I graduated with a Bachelor of Science (Computer
-          Science) from the University of New South Wales in 2022, and I'm
-          currently pursuing further study in a standalone honours degree
-          program.
+          Hi, I&apos;m Zhou. I&apos;m a software engineer with a passion for
+          learning new technologies. I graduated with a Bachelor of Science
+          (Computer Science) from the University of New South Wales in 2022, and
+          I&apos;m currently pursuing further study in a standalone honours
+          degree program.
         </p>
         <p className="mt-3 text-lg leading-6 text-slate-100 font-light">
-          I enjoy building things that people use, and I'm always looking for
-          new opportunities to learn and grow. There are so many things I'd like
-          to build but not enought time to do so by myself. Want to work
-          together to build something awesome? Send me a message and lets chat!
+          I enjoy building things that people use, and I&apos;m always looking
+          for new opportunities to learn and grow. There are so many things
+          I&apos;d like to build but not enought time to do so by myself. Want
+          to work together to build something awesome? Send me a message and
+          lets chat!
         </p>
         <p className="mt-3 text-lg leading-6 text-slate-100 font-light">
           <span className="font-bold">Interests:</span> Front-end developement,
