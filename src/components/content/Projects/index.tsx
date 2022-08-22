@@ -3,7 +3,7 @@ import { ForwardedRef, forwardRef } from "react";
 const Projects = ({}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <section
-      className="h-screen flex bg-blue-900 text-white scroll-mt-20"
+      className="flex bg-blue-900 text-white scroll-mt-20"
       id="projects"
       ref={ref}
     >
