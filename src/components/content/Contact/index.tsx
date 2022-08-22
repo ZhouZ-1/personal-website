@@ -33,7 +33,11 @@ const Contact = ({}, ref: ForwardedRef<HTMLDivElement>) => {
   };
 
   return (
-    <section className="bg-white mx-auto" id="contact" ref={ref}>
+    <section
+      className="mx-auto bg-gradient-to-b from-slate-300 to-slate-200"
+      id="contact"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-5">
         <div className=" py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-20 xl:pr-12 ml-auto">
           <div className="max-w-lg mx-auto">

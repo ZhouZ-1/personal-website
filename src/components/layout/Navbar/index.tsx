@@ -16,7 +16,7 @@ const Navbar = ({ refs }: Props) => {
   }, [refs]);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 fixed t-0 w-full z-10 bg-black font-semibold">
+    <nav className="flex items-center justify-between flex-wrap p-6 fixed t-0 w-full z-10 bg-black/50 backdrop-blur font-semibold">
       <h1 className="text-white mr-6 text-2xl cursor-default md:ml-2">
         {"<Zhou />"}
       </h1>
