@@ -22,8 +22,9 @@ const About = ({}, ref: ForwardedRef<HTMLDivElement>) => {
           I enjoy building things that people use, and I&apos;m always looking
           for new opportunities to learn and grow. There are so many things
           I&apos;d like to build but not enought time to do so by myself, and
-          I'm sure that I'm not the only one with this issue. Want to work
-          together to build something awesome? Send me a message and lets chat!
+          I&apos;m sure that I&apos;m not the only one with this issue. Want to
+          work together to build something awesome? Send me a message and lets
+          chat!
         </p>
         <p className="mt-3 text-lg leading-6 text-slate-100 font-light">
           <span className="font-bold">Interests:</span> Front-end developement,
