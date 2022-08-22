@@ -3,6 +3,7 @@ import Socials from "../../icons/Socials";
 import Stars from "./Stars";
 
 import ArrowDownIcon from "../../icons/svgs/arrow-down-icon.svg";
+import BouncingDownArrow from "../../icons/BouncingDownArrow";
 
 const Landing = ({}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
@@ -19,9 +20,7 @@ const Landing = ({}, ref: ForwardedRef<HTMLDivElement>) => {
         Penultimate student @ UNSW | Software Engineer
       </p>
       <Socials />
-      <a href="#about" className="absolute bottom-10 animate-bounce">
-        <ArrowDownIcon width={24} height={24} />
-      </a>
+      <BouncingDownArrow href="#about" />
     </main>
   );
 };
