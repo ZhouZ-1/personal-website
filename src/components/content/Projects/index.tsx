@@ -170,8 +170,8 @@ const Projects = ({}, ref: ForwardedRef<HTMLDivElement>) => {
             <p className="text-slate-200 text-lg">
               A personal webite to showcase projects and practice frontend
               development. Created using TypeScript, TailwindCSS, Next.js, with
-              plans to integrate next-auth, Prisma, PostgreSQL and tRPC into the
-              website.
+              plans to integrate next-auth, Prisma, PostgreSQL and tRPC in the
+              future.
             </p>
             <a
               href="https://zzhou.dev/"
