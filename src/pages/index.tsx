@@ -18,7 +18,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Zhuoling Zhou | Software Engineer</title>
-        <meta name="description" content="Zhou's personal website." />
+        <meta
+          name="description"
+          content="Software engineer based in Sydney, Australia. Current computer science student at UNSW. "
+        />
         <meta property="og:image" content="/favicon.ico" />
         <link
           rel="apple-touch-icon"

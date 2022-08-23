@@ -14,7 +14,7 @@ const BouncingDownArrow = ({ href, className }: Props) => {
         (className ?? "")
       }
     >
-      <ArrowDownIcon width={24} height={24} />
+      <ArrowDownIcon width={24} height={24} alt="floating arrow down button" />
     </a>
   );
 };

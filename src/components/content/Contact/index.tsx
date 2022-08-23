@@ -88,7 +88,7 @@ const Contact = ({}, ref: ForwardedRef<HTMLDivElement>) => {
             </dl>
           </div>
         </div>
-        <div className="py-12 px-4 sm:px-6 lg:col-span-3 lg:py-20 lg:px-8 xl:pl-12">
+        <div className="pb-12 px-4 sm:px-6 lg:col-span-3 lg:py-20 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form onSubmit={onSubmit} className="grid grid-cols-1 gap-y-6">
               <div>
