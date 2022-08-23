@@ -13,6 +13,7 @@ const BouncingDownArrow = ({ href, className }: Props) => {
         "absolute bottom-10 animate-bounce rounded-full p-4 " +
         (className ?? "")
       }
+      aria-label="Scroll down"
     >
       <ArrowDownIcon width={24} height={24} alt="floating arrow down button" />
     </a>
