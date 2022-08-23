@@ -1,6 +1,5 @@
 import { ForwardedRef, forwardRef } from "react";
 import Socials from "../../icons/Socials";
-import Stars from "./Stars";
 
 import BouncingDownArrow from "../../icons/BouncingDownArrow";
 
@@ -11,7 +10,6 @@ const Landing = ({}, ref: ForwardedRef<HTMLDivElement>) => {
       id="home"
       ref={ref}
     >
-      <Stars />
       <h2 className="text-5xl md:text-7xl font-light ">
         Zhuoling <span className="font-bold">Zhou</span>
       </h2>

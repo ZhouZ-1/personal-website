@@ -7,6 +7,7 @@ import About from "../components/content/About";
 import Projects from "../components/content/Projects";
 import Contact from "../components/content/Contact";
 import { useRef } from "react";
+import Stars from "../components/content/Landing/Stars";
 
 const Home: NextPage = () => {
   const landingRef = useRef(null);
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar refs={[landingRef, aboutRef, projectsRef, contactRef]} />
       <Landing ref={landingRef} />
+      <Stars />
       <About ref={aboutRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
