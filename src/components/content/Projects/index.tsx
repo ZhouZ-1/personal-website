@@ -190,6 +190,32 @@ const Projects = ({}, ref: ForwardedRef<HTMLDivElement>) => {
               Source
             </a>
           </div>
+
+          <div className="md:w-1/2 mt-4 md:pr-5">
+            <h3 className="font-bold text-xl">CSESoc Course List</h3>
+            <p className="text-slate-200 text-lg">
+              Built an accessible and responsive interface to view all possible
+              courses chats in the CSESoc discord server the user can join.
+              Improves on the previous implementation by adding missing courses
+              and interactivity.
+            </p>
+            <a
+              href="https://courses.zzhou.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-dashed decoration-1 cursor-pointer mr-2 hover:text-white text-slate-400"
+            >
+              Website
+            </a>
+            <a
+              href="https://github.com/ZhouZ-1/csesoc-courses"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-dashed decoration-1 cursor-pointer mr-2 hover:text-white text-slate-400"
+            >
+              Source
+            </a>
+          </div>
         </div>
       </div>
     </section>
