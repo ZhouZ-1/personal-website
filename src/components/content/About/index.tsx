@@ -12,19 +12,20 @@ const About = ({}, ref: ForwardedRef<HTMLDivElement>) => {
           &lt;About /&gt;
         </h2>
         <p className="mt-3 text-lg leading-6 text-slate-100 font-light">
-          Hi, I&apos;m Zhou. I&apos;m a software engineer with a passion for
-          learning new technologies. I graduated with a Bachelor of Science
-          (Computer Science) from the University of New South Wales in 2022, and
-          I&apos;m currently pursuing further study in a standalone honours
+          Hey there! I&apos;m Zhou, a tech-savvy software engineer driven by my
+          love for exploring cutting-edge technologies. Fresh out of the
+          University of New South Wales with a BSc in Computer Science, I&apos;m
+          now taking my education to the next level with a standalone honours
           degree program.
         </p>
         <p className="mt-3 text-lg leading-6 text-slate-100 font-light">
-          I enjoy building things that people use, and I&apos;m always looking
-          for new opportunities to learn and grow. There are so many things
-          I&apos;d like to build but not enought time to do so by myself, and
-          I&apos;m sure that I&apos;m not the only one with this issue. Want to
-          work together to build something awesome? Send me a message and lets
-          chat!
+          Building products that make a difference in people&apos;s lives is my
+          ultimate goal. I&apos;m always on the hunt for new challenges and
+          opportunities to learn and grow. With so many amazing projects I want
+          to tackle, I&apos;d love to collaborate with others to bring our
+          shared visions to life. If you&apos;re looking for a partner to turn
+          your ideas into realities, let&apos;s connect and create something
+          truly awesome!
         </p>
         <p className="mt-3 text-lg leading-6 text-slate-100 font-light">
           <span className="font-bold">Interests:</span> Front-end developement,
