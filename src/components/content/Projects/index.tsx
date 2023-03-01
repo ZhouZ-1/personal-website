@@ -38,7 +38,7 @@ const Projects = ({}, ref: ForwardedRef<HTMLDivElement>) => {
               search.
             </p>
             <a
-              href="https://www.arc.unsw.edu.au/get-involved"
+              href="https://www.arc.unsw.edu.au/clubs"
               target="_blank"
               rel="noopener noreferrer"
               className="underline decoration-dashed decoration-1 cursor-pointer mr-2 hover:text-white text-slate-400"
